@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudarshana AI - Home</title>
+<style>
+  body {
+    margin: 0;
+    background: black;
+    color: #d1b3ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5em;
+    color: #b366ff;
+    margin-bottom: 40px;
+  }
+  .option-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+    max-width: 400px;
+  }
+  .option {
+    background: linear-gradient(90deg, #7a00cc, #b84dff);
+    border-radius: 20px;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+  }
+  .option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #b366ff;
+  }
+  .option img {
+    width: 50px;
+    height: 50px;
+  }
+  .option span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h1>⚡ Sudarshana AI</h1>
+
+<div class="option-container">
+  <div class="option" onclick="location.href='image_generator.html'">
+    <img src="https://img.icons8.com/fluency/48/ffffff/picture.png" alt="Image Generator">
+    <span>Image Generator</span>
+  </div>
+
+  <div class="option" onclick="location.href='text_generator.html'">
+    <img src="https://img.icons8.com/fluency/48/ffffff/chat.png" alt="Chat AI">
+    <span>Chat with Sudarshana</span>
+  </div>
+</div>
+
+</body>
+</html>
