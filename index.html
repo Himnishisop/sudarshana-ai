@@ -3,71 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sudarshana AI - Home</title>
+<title>Sudarshana AI</title>
 <style>
-  body {
-    margin: 0;
-    background: black;
-    color: #d1b3ff;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  h1 {
-    font-size: 2.5em;
-    color: #b366ff;
-    margin-bottom: 40px;
-  }
-  .option-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 90%;
-    max-width: 400px;
-  }
-  .option {
-    background: linear-gradient(90deg, #7a00cc, #b84dff);
-    border-radius: 20px;
-    padding: 25px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    transition: all 0.3s ease;
-  }
-  .option:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #b366ff;
-  }
-  .option img {
-    width: 50px;
-    height: 50px;
-  }
-  .option span {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
+body {
+  background: black;
+  color: #d1b3ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: #b366ff;
+}
+h2 {
+  font-size: 1.5em; /* increased size */
+  margin-top: 0;
+  color: #d1b3ff;
+  font-weight: bold; /* made bold */
+}
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+}
+.option {
+  background: linear-gradient(135deg, #7a00cc, #b84dff);
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.option:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #b366ff;
+}
+.option img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+.option p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
 </style>
 </head>
 <body>
 
-<h1>⚡ Sudarshana AI</h1>
+<h1>⚡ Sudarshana  AI<H1></H1>
+<h2>Found By Himnish Verma</h2>
 
-<div class="option-container">
-  <!-- Image Generator -->
+<div class="options">
   <div class="option" onclick="location.href='https://himnishisop.github.io/image-generator'">
-    <img src="https://img.icons8.com/fluency/48/ffffff/picture.png" alt="Image Generator">
-    <span>Image Generator</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Image Generator">
+    <p>Image Generator</p>
   </div>
-
-  <!-- Chat with Sudarshana -->
   <div class="option" onclick="location.href='https://himnishisop.github.io/chat'">
-    <img src="https://img.icons8.com/fluency/48/ffffff/chat.png" alt="Chat AI">
-    <span>Chat with Sudarshana</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt="Chat with Sudarshana">
+    <p>Chat with Sudarshana</p>
   </div>
 </div>
 
