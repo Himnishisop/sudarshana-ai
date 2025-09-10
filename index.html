@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sudarshana AI</title>
-<style>
-body {
-  background: black;
-  color: #d1b3ff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 20px;
-}
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 5px;
-  color: #b366ff;
-}
-h2 {
-  font-size: 1.5em; /* increased size */
-  margin-top: 0;
-  color: #d1b3ff;
-  font-weight: bold; /* made bold */
-}
-.options {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  gap: 30px;
-}
-.option {
-  background: linear-gradient(135deg, #7a00cc, #b84dff);
-  border-radius: 20px;
-  padding: 30px 40px;
-  width: 180px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.option:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px #b366ff;
-}
-.option img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
-}
-.option p {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Sudarshana AI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a001a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 38px;
+      color: #d580ff;
+      margin-bottom: 5px;
+      text-shadow: 0 0 15px #9d4edd;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #bbb;
+      margin-bottom: 40px;
+    }
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .option {
+      background: rgba(40, 0, 60, 0.85);
+      border-radius: 20px;
+      padding: 30px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+      box-shadow: 0 0 25px rgba(140, 0, 255, 0.5);
+    }
+    .option:hover {
+      transform: scale(1.05);
+      background: rgba(90, 0, 140, 0.9);
+    }
+    .option span {
+      margin-top: 10px;
+    }
+    .icon {
+      font-size: 32px;
+      margin-bottom: 5px;
+      text-shadow: 0 0 10px #b300ff;
+    }
+    @media (max-width: 600px) {
+      .options {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
+  <h1>✨ Sudarshana AI</h1>
+  <h2>Found By Himnish Verma</h2>
 
-<h1>⚡ Sudarshana  AI<H1></H1>
-<h2>Found By Himnish Verma</h2>
-
-<div class="options">
-  <div class="option" onclick="location.href='https://himnishisop.github.io/image-generator'">
-    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png" alt="Image Generator">
-    <p>Image Generator</p>
+  <div class="options">
+    <div class="option" onclick="location.href='https://himnishisop.github.io/image-generator'">
+      <div class="icon">🖼️</div>
+      <span>Image Generator</span>
+    </div>
+    <div class="option" onclick="location.href='https://himnishisop.github.io/chat'">
+      <div class="icon">🤖</div>
+      <span>Chat with Sudarshana</span>
+    </div>
+    <div class="option" onclick="location.href='https://himnishisop.github.io/transcription/'">
+      <div class="icon">🎤</div>
+      <span>Speech to Text</span>
+    </div>
+    <div class="option" onclick="location.href='https://himnishisop.github.io/text-to-speech/'">
+      <div class="icon">🔊</div>
+      <span>Text to Speech</span>
+    </div>
   </div>
-  <div class="option" onclick="location.href='https://himnishisop.github.io/chat'">
-    <img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt="Chat with Sudarshana">
-    <p>Chat with Sudarshana</p>
-  </div>
-</div>
-
 </body>
 </html>
